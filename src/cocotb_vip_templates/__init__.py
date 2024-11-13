@@ -1,9 +1,9 @@
-"""Cocotb VIP templates package.
+from .bus import GpioBus
+from .config import GpioConfig
+from .debug import GpioDebug
+from .driver import GpioDriver
+from .driver_master import GpioMasterDriver
+from .driver_slave import GpioSlaveDriver
+from .monitor import GpioMonitor
 
-Template file for creation of cocotb VIP
-
-"""
-
-from __future__ import annotations
-
-__all__: list[str] = []
+__all__ = ["GpioBus", "GpioConfig", "GpioDebug", "GpioDriver", "GpioMasterDriver", "GpioSlaveDriver", "GpioMonitor"]
